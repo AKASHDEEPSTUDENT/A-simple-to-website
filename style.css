@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f0e68c;
+    font-family: 'Arial', sans-serif;
+}
+
+.form {
+    position: absolute;
+    top: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    width: 400px;
+    background-color: #add8e6;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #4169e1;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #4169e1;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #add8e6;
+    color: #4169e1;
+}
+
+.input::placeholder {
+    color: #000000;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    list-style-type: none;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    border-top: 2px solid #4169e1;
+    position: relative;
+    background-color: #f0e68c;
+    color: #4169e1;
+}
+
+.list li .fa-trash {
+    color: #ff0000;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li .fa-check-square {
+    color: #00ff00;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.list li.checked {
+    color: #c0c0c0;
+    text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square {
+    color: #c0c0c0;
+}
